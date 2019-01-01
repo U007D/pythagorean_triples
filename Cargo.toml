@@ -1,0 +1,29 @@
+[package]
+name = "pythagorean_triples"
+version = "0.1.0"
+authors = ["Brad Gibson <b2b@humanenginuity.com>"]
+edition = "2018"
+
+[dependencies]
+
+[profile.bench]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+codegen-units = 1
+panic = 'unwind'
+incremental = false
+overflow-checks = false
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+codegen-units = 1
+panic = 'unwind'
+incremental = false
+overflow-checks = false
